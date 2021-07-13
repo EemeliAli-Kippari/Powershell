@@ -15,3 +15,23 @@
 
 ```help <cmdlet> -ShowWindow -Examples```
 > gives a manual of wanted command with 2 possible options
+
+### **Formatting and output manipulation**
+```Format-Table```
+> formatting
+
+```Select-Object x,y,z```
+> Gets only the specified properties of objects
+
+```Where-Object {$_.<property> <operator> <value>}```
+> Gets properties that have a set value
+
+
+### **Miscellaneous:**
+``` $PSItem OR $_```
+> contains the current object of the pipeline
+
+```-WhatIf ```
+> gives a demonstration of what would happen
+
+
