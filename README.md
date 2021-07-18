@@ -26,6 +26,8 @@
 ```Where-Object {$_.<property> <operator> <value>}```
 > Gets properties that have a set value
 
+```Where-Object {-not $_.<property> -notlike '<value>'}```
+> Exclude objects based on filters. 
 
 ### **Miscellaneous:**
 ``` $PSItem OR $_```
