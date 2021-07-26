@@ -29,6 +29,13 @@
 ```Where-Object {-not $_.<property> -notlike '<value>'}```
 > Exclude objects based on filters. 
 
+### **Remote connection**
+```$s = New-CimSession -ComputerName <computername>```
+> Starts a new persistent CIM session to a remote computer.
+
+```Get-WmiObject –namespace root\cimv2 –list | Where Name –like '*keywordhere*' | Sort Name```
+> Finds repository classes
+
 ### **Miscellaneous:**
 ``` $PSItem OR $_```
 > contains the current object of the pipeline
