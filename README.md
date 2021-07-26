@@ -29,12 +29,24 @@
 ```Where-Object {-not $_.<property> -notlike '<value>'}```
 > Exclude objects based on filters. 
 
+```Where <property> -like '<value>' ```
+> Gets properties that are like described
+
+```–Filter "<property> LIKE '<value>%'" ```
+> Can be used instead of Where-Object directly after the command without pipeline
+
+``` select @{N=’ComputerName’; E={$_.PSComputerName}} ```
+> Renames the name of a property to any string
+
 ### **Remote connection**
 ```$s = New-CimSession -ComputerName <computername>```
 > Starts a new persistent CIM session to a remote computer.
 
 ```Get-WmiObject –namespace root\cimv2 –list | Where Name –like '*keywordhere*' | Sort Name```
 > Finds repository classes
+
+``` Invoke-CimMethod -class <repositoryclass> -methodname <method> ```
+> Invokes a CIM method
 
 ### **Miscellaneous:**
 ``` $PSItem OR $_```
