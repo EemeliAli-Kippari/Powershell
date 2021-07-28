@@ -50,9 +50,16 @@
 
 ### **Miscellaneous:**
 ``` $PSItem OR $_```
-> contains the current object of the pipeline
+> Contains the current object of the pipeline
 
 ```-WhatIf ```
-> gives a demonstration of what would happen
+> Gives a demonstration of what would happen
 
+``` '' and "" ```
+> Single quotes are literal and wont be processed even if a cmdlet or $ is inside. Double quotes allow processing
 
+``` Get-Random ```
+> Gets random numbers. more info https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-random?view=powershell-7.1 OR Help Get-Random
+
+``` [char]<number> ```
+> Makes a number into a letter. Does not accept pipeline input.
