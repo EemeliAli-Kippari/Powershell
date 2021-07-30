@@ -48,6 +48,10 @@
 ``` Invoke-CimMethod -class <repositoryclass> -methodname <method> ```
 > Invokes a CIM method
 
+```Enter-PSSession -ComputerName <computername> ```
+```Invoke-Command –ComputerName name1,name2 –ScriptBlock { command }```
+> Enables a one-to-one remote connection similiar to SSH session. Used like in the example above.
+
 ### **Miscellaneous:**
 ``` $PSItem OR $_```
 > Contains the current object of the pipeline
