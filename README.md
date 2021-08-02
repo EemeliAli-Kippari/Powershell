@@ -52,6 +52,16 @@
 ```Invoke-Command –ComputerName name1,name2 –ScriptBlock { command }```
 > Enables a one-to-one remote connection similiar to SSH session. Used like in the example above.
 
+### **Scripting**
+```[type(int,string)]$varname = value```
+> Creates a variable with a value. Can be assigned a type if wanted.
+
+```$varname = @(value1,value2,value3)```
+> Creates an array
+
+```foreach ($<item> in $<collection>) {statement list}```
+> Loops through a collection. Array is a collection for example. $item is the name you give to the current item.
+
 ### **Miscellaneous:**
 ``` $PSItem OR $_```
 > Contains the current object of the pipeline
