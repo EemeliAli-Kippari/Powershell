@@ -77,3 +77,6 @@
 
 ``` [char]<number> ```
 > Makes a number into a letter. Does not accept pipeline input.
+
+``` Get-Alias -Definition <cmdlet> ```
+> Get aliases
